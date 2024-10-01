@@ -1,8 +1,11 @@
-FROM openjdk:21-jdk-slim
+FROM gradle:jdk21
 
-WORKDIR /app
+COPY ./ ./
 
-COPY build/libs/*.jar app.jar
+RUN gradle build
+
+RUN mv ./build/libs/portfolio-SG-0.0.1-SNAPSHOT.jar /app.jar
+
+
 EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+CMD ["java", "-jar", "/app.jar"]
