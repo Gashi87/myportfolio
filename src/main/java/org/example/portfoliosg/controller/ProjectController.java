@@ -22,7 +22,7 @@ public class ProjectController {
     public String getAllProjects(Model model) {
         List<Project> projects = projectService.getAllProjects();
         model.addAttribute("projects", projects);
-        return "projects";  // Thymeleaf view name
+        return "projects";
     }
 
     @PostMapping("/projects/add")

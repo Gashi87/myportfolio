@@ -13,7 +13,7 @@ public class ProjectService {
 
     public ProjectService() {
         projects.add(new Project("Best Gym Ever", "https://github.com/Gashi87/BestGymEver",
-                "Ett gymsystem där det går att spåra om medlemmarna är faktiska vid IT-strul "));
+                "Ett gymsystem där det går att spåra om medlemmarna är faktiska vid IT-strul. "));
 
     }
 

@@ -12,7 +12,7 @@ public class SocialLinkService {
     private final List<SocialLink> socialLinks = new ArrayList<>();
 
     public SocialLinkService() {
-        // Lägg till dina länkar här
+
         socialLinks.add(new SocialLink("Email", "shayan.ghefouri@yh.nackademin.se"));
         socialLinks.add(new SocialLink("LinkedIn", "https://linkedin.com/in/shayan-ghefouri-80210a290"));
         socialLinks.add(new SocialLink("GitHub", "https://github.com/gashi87"));

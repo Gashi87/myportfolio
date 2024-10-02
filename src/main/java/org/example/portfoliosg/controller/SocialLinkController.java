@@ -23,6 +23,6 @@ public class SocialLinkController {
     public String getSocialLinks(Model model) {
         List<SocialLink> socialLinks = socialLinkService.getAllSocialLinks();
         model.addAttribute("socialLinks", socialLinks);
-        return "social-links"; // Returnerar Thymeleaf-sidan
+        return "social-links";
     }
 }

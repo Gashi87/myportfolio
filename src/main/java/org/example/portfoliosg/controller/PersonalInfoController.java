@@ -21,6 +21,6 @@ public class PersonalInfoController {
     public String personalInfo(Model model) {
         PersonalInfo personalInfo = personalInfoService.getPersonalInfo();
         model.addAttribute("personalInfo", personalInfo);
-        return "personalInfo"; // Namnet på din vy
+        return "personalInfo";
     }
 }
