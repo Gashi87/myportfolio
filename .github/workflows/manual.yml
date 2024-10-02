@@ -19,7 +19,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
-        image: gashi87/portfolioshayan333
+        image: gashi87/portfolioshayan
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
