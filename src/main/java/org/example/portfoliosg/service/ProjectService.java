@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class ProjectService {
 
-    private List<Project> projects = new ArrayList<>();
+    private final List<Project> projects = new ArrayList<>();
 
     public ProjectService() {
         projects.add(new Project("Best Gym Ever", "https://github.com/Gashi87/BestGymEver",
